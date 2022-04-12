@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>News Api</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="dash.css">
+	<style type="text/css">
+		#loader {
+			height: 100vh;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+
+		}
+
+		.progress {
+			display: none;
+		}
+
+		.errorMsg {
+			font-size: 34px;
+			height: 100vh;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+		}
+		ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+	</style>
+    <ul>
+        <li style="font-size: 30px">Welcome</li>
+        <li style="float: right; font-size: 30px"><a href="login.html">SignOut</a></li>
+    </ul>
+    <p style="background-image: url('/images/c.jpg');">
+        <button onclick="location.href='dash.html'" style="text-align: right; color: red; font-size: 30px">Refresh</button>
+        <button onclick="location.href='setting.html'" style="color: red; font-size: 30px;float: right">Settings</button>
+    </p>
+</head>
+
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div id="newsResults"></div>
+		</div>
+
+		<div id="loader">
+			<div class="progress">
+				<div class="indeterminate"></div>
+			</div>
+		</div>
+
+	</div>
+    
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type ="text/JavaScript" src="/src/materialize.min.js"></script>
+	<script type ="text/JavaScript" src="dash.js"></script>
+</body>
+
+</html>
